@@ -1,0 +1,26 @@
+.card{
+    margin-top: 2rem;
+    // Får inte växa, får inte krympa, ska ta upp hela ytan
+    flex: 0 0 100%;
+    // Från tablet size och uppåt får den inte växa, inte krympa och ta upp 50% av ytan
+    @media (min-width: $media-tab) {
+        flex: 0 0 calc((100%/2) - (((2 - 1) / 2) * 1rem));
+    }
+    .card-img{
+        // Rundade hörn
+        border-radius: $border-radius-xlg;
+        // Så att det blir rundade hörn
+        overflow: hidden;
+        border: solid 2px $primary-border-color;
+        margin-bottom: 1rem;
+        flex: 0 0 100%;
+    }
+    .card-text{
+        // Text centrerad
+        text-align: center;
+        flex: 0 0 100%;
+        h3{
+            margin-bottom: 0.5rem;
+        }
+    }
+}

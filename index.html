@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Travel</title>
+
+    <!-- Stylefil -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Space Grotesk font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="site-header-content">
+
+            <!-- Logo -->
+            <a href="#" class="site-logo-link">
+                <div class="site-logo">
+                    <h4>Mars Travels</h4>
+                </div>
+            </a>
+
+            <div class="site-header-content-right">
+
+                <p>Choose your space mode</p>
+                <!-- <span class="material-symbols-outlined">light_mode</span>
+                <span class="material-symbols-outlined">dark_mode</span> -->
+
+                <!-- Toggle -->
+                <label class="toggleBtn">
+                    <input type="checkbox" id="toggleBtn">
+                    <span class="slider round"></span>
+                </label>
+
+            </div>
+
+        </div>
+    </header><!-- Header slut -->
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <!-- Hero img -->
+        <div class="hero-img"></div>
+    
+        <!-- Form -->
+        <form autocomplete="off">
+
+            <h3>Choose your space name before entering</h3>
+            <label for="spaceName">Space name must be at least 3 characters</label>
+
+            <div class="input-btn-block">
+                <input id="spaceName" type="text" placeholder="Pick your space name">
+                <input id="sendBtn" type="submit" disabled>
+            </div>
+
+        </form><!-- Form slut -->
+
+    </section><!-- Hero slut -->
+
+    <section><!-- Heading 1 -->
+        <div class="heading-block">
+            <h1>Welcome to Mars</h1>
+        </div>
+        <div class="heading-block">
+            <h2 id="headingName"></h2>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <section>
+        <main class="main-content"></main>
+    </section><!-- Main slut -->
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <h4>Mars travel</h4>
+        </div>
+    </footer><!-- Footer slut -->
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

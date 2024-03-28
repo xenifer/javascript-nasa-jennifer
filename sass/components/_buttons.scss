@@ -1,0 +1,22 @@
+input{
+    // Stylea på knappen
+    &[type="submit"]{
+    background-color: $cta-surface;
+    // Ta bort default border
+    border: none;
+    border-radius: 100px;
+    // Får inte växa, får inte krympa, ska ta upp 50% av ytan
+    flex: 0 0 50%;
+    padding: $spacing-md $spacing-lg;
+    color: $primary-text;
+    // Snyggare övergång när knappen blir enabled
+    transition: 0.5s;
+    }
+    // Klass som ligger på från början
+    &:disabled{
+    background-color: $surface-disabled;
+    color: $text-invert;
+    // Gör så att det kommer upp en ikon vid hover
+    cursor: not-allowed;
+    }
+}

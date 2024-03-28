@@ -1,0 +1,37 @@
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $primary-surface;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+// Klass som läggs till på body när user klickar på toggleBtn (JS)
+.dark{
+    background-color: $surface-invert;
+    h1, h3, h4, p, a {
+        color: $text-invert;
+    }
+    .hero{
+        .hero-img{
+            border: solid 1px $border-color-invert;
+        }
+        form{
+            border: solid 1px $border-color-invert;
+            background-color: $brand-surface-invert;
+            label{
+                color: $text-invert;
+            }
+        }
+    }
+    .site-footer{
+        background-color: $cta-surface;
+    }
+}

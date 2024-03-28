@@ -1,0 +1,51 @@
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    color: $primary-text;
+}
+
+h1{
+    font-size: 2.6rem;
+    // Centrerad text
+    text-align: center;
+    // Versaler
+    text-transform: uppercase;
+    // Från tablet storlek och uppåt ändras fontstorlek
+    @media (min-width: $media-tab) {
+        font-size: 4.5rem;
+    }
+    // Från desktop storlek och uppåt ändras fontstorlek
+    @media (min-width: $media-des) {
+        font-size: 7rem;
+    }
+}
+
+h2{
+    font-size: 2.6rem;
+    // Centrerad text
+    text-align: center;
+    color: $text-brand;
+    // Versaler
+    text-transform: uppercase;
+    // Från tablet storlek och uppåt ändras fontstorlek
+    @media (min-width: $media-tab) {
+        font-size: 4.5rem;
+    }
+    // Från desktop storlek och uppåt ändras fontstorlek
+    @media (min-width: $media-des) {
+        font-size: 7rem;
+    }
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+a{
+    // Ta bort underlinje
+    text-decoration: none;
+    color: #090909;
+}
